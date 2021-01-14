@@ -19,6 +19,28 @@
     img:hover {
       box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
     }
+    .tbn {
+      border: 1px solid #ddd; /* Gray border */
+      border-radius: 4px; /* Rounded border */
+      padding: 5px; /* Some padding */
+      width: auto; /* Set a small width */
+      height: auto;
+    }
+    tbn:hover {
+      box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    }
+    .column {
+      float: left;
+      /* width: 33.33%; */
+      padding: 5px;
+    }
+
+    /* Clear floats after image containers */
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
   </style>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -68,44 +90,26 @@
           Einfach rechtklick auf den Packagenamen des Spiels -> pausieren <br />
           Danach wieder rechtsklick -> resume
         </p>
-        <h2>Call of Duty 4 - Modern Warfare</h2>
-        <hr />
-        <h4>Awaiting Keycode Authorization</h4>
-        <b>Mögliche Fehlerquellen:</b>
-        <ul>
-          <li>Mehrere Netzwerkadapter</li>
-          <li>Falsche Netzwerk Reihenfolge -> <a href="https://www.windowscentral.com/how-change-priority-order-network-adapters-windows-10">Lösung</a></li>
-          <li>+set sv_authorizemode -1 ( set it as a commandline option )</li>
-        </ul>
-        <hr />
-        <h4>Verbindungsprobleme</h4>
-        <p>
-          Die config_mp.cfg editieren (Call of Duty 4 - Modern
-          Warfare\players\profiles\'profile name'\config_mp.cfg) <br />
-          seta cl_connectionAttempts "30" hinzufügen/ändern
-        </p>
-        <hr />
-        <h4>Links</h4>
-        <ul>
-          <li>
-            <a href="https://radmin-club.com/other-games/cod-4-tutorial/"
-              >https://radmin-club.com/other-games/cod-4-tutorial/</a
-            >
-          </li>
-          <li>
-            <a href="https://lanpartyguide.com/cod4.html"
-              >https://lanpartyguide.com/cod4.html</a
-            >
-          </li>
-        </ul>
-        <hr />
-        <br />
         <h2>Links</h2>
         <ul>
           <li>
             <a href="https://lanpartyguide.com/">https://lanpartyguide.com/</a>
           </li>
         </ul>
+        <hr />
+        <h2>Games</h2>
+        <!-- <div class="row"> -->
+        <div class="column">
+          <a href="cod4.html"
+            ><img class="tbn" src="../img/games/cod4_box.jpg" alt="COD 4"
+          /></a>
+        </div>
+        <div class="column">
+          <a href="bf3.html"
+            ><img class="tbn" src="../img/games/bf3.jpg" alt="COD 4"
+          /></a>
+        </div>
+        <!-- </div> -->
       </div>
     </section>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

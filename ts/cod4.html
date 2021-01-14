@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Troubleshooting</title>
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap-4.4.1.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="../index.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../ts/ts.html">Troubleshoot</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section>
+      <div class="col-12 text-left">
+        <h2>Call of Duty 4 - Modern Warfare</h2>
+        <hr />
+        <h4>Awaiting Keycode Authorization</h4>
+        <b>Mögliche Fehlerquellen:</b>
+        <ul>
+          <li>Mehrere Netzwerkadapter</li>
+          <li>
+            Falsche Netzwerk Reihenfolge ->
+            <a
+              href="https://www.windowscentral.com/how-change-priority-order-network-adapters-windows-10"
+              >Lösung</a
+            >
+          </li>
+          <li>+set sv_authorizemode -1 ( set it as a commandline option )</li>
+        </ul>
+        <hr />
+        <h4>Verbindungsprobleme</h4>
+        <p>
+          Die config_mp.cfg editieren (Call of Duty 4 - Modern
+          Warfare\players\profiles\'profile name'\config_mp.cfg) <br />
+          seta cl_connectionAttempts "30" hinzufügen/ändern
+        </p>
+        <hr />
+        <h4>Links</h4>
+        <ul>
+          <li>
+            <a href="https://radmin-club.com/other-games/cod-4-tutorial/"
+              >https://radmin-club.com/other-games/cod-4-tutorial/</a
+            >
+          </li>
+          <li>
+            <a href="https://lanpartyguide.com/cod4.html"
+              >https://lanpartyguide.com/cod4.html</a
+            >
+          </li>
+        </ul>
+        <hr />
+        <br />
+      </div>
+    </section>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+  </body>
+</html>
